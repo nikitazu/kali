@@ -1,5 +1,8 @@
 #mainContent {
 	font-family: monospace;
+}
+
+.code-block-holder {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -13,9 +16,31 @@
 	min-height: 400px;
 }
 
+p.code-block {
+	min-height: 30px;
+	text-align: center;
+	color: gray;
+}
+
 #results ol {
 	padding: 0;
 	margin: 0;
+}
+
+body {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+h1 .subtitle {
+	color: gray;
+	font-size: 60%;
+	font-style: italic;
+}
+
+footer {
+	text-align: center;
+	color: gray;
 }
 
 .buttonStyle {

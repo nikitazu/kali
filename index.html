@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Calculator Kali</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+	<h1>
+		Calculator Kali
+		<span class="subtitle"> a passion for the math</span>
+	</h1>
+	
+	<div id="mainContent" class="code-block-holder">
+		<textarea
+			id="evaluator"
+			class="code-block"
+			type="textarea"
+			name="evaluator"
+			v-model="inputText"
+			v-on="click: evaluatorInputTextChanged">
+		</textarea>
+		
+		<div
+			id="results"
+			class="code-block"
+			v-html="inputText | evaluate">
+		</div>
+	</div>
+	
+	<div class="code-block-holder">
+		<p class="code-block">
+			Type math expression into the left panel.
+		</p>
+		
+		<p class="code-block">
+			It will be evaluated on the right panel.
+		</p>
+	</div>
+	
+	<div id="help">
+		
+		<h3>Constants</h3>
+		<p>
+			LN2 | LOG2E | LOG10E | PI | SQRT12 | SQRT2 | LN10
+		</p>
+		
+		<h3>Functions</h3>
+		<p>
+			acos | asin | atan | atan2 | exp | min | random | sqrt |
+			log | round | floor | ceil | sin | cos | tan | pow | max | abs
+		</p>
+	</div>
+	
+	<footer>
+		<hr />
+		<p>by: Nikita B. Zuev</p>
+		<p>Contact information: <a href="mailto:nikitazu@gmail.com">nikitazu@gmail.com</a>.</p>
+		<p><a href="http://nikitazu.ru">nikitazu.ru</a></p>
+	</footer>
+
+	<script src="libs/_bower.js"></script> 
+	<script src="app/main.js"></script>
+
+</body>
+</html>

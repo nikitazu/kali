@@ -26,7 +26,7 @@ var app = new Vue({
     el: '#mainContent',
     
     data: {
-        inputText: '2+3\n5*2\n\n$1+$2\n1+1'
+        inputText: '2+3\n5*2\n\n$1+$2\nsin(3*PI/2)'
     },
     
     filters: {
