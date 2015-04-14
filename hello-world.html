@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Hello...</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+	<div id="mainContent">
+		<textarea
+			id="evaluator"
+			class="code-block"
+			type="textarea"
+			name="evaluator"
+			v-model="inputText"
+			v-on="click: evaluatorInputTextChanged">
+		</textarea>
+		
+		<div
+			id="results"
+			class="code-block"
+			v-html="inputText | evaluate">
+		</div>
+	</div>
+	
+	<div id="tools">
+		<p id="helloText">?</p>
+		<button id="clickButton" class="buttonStyle">click me</button>
+	</div>
+
+	<script src="libs/_bower.js"></script> 
+	<script src="app/main.js"></script>
+
+</body>
+</html>
